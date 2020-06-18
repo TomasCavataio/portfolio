@@ -1,0 +1,59 @@
+.content{
+ margin: 0% 15% 0% 15%;
+ width: 100%;
+ height: 90%;
+}
+
+.bg{
+    background-image: url('../img/light.jpg');
+	background-size: 100% 100%;
+	height: 100vh;
+}
+
+.box{
+    height: 70%;
+    width: 80%;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+
+.presentation{
+    margin-top: 10%;
+    height: 80%;
+    width: 100%;
+    display: flex;
+    grid-template-rows: repeat(3,1fr);
+    font-family: 'Cinzel', serif;
+    justify-content: center;
+    align-items: center;
+}
+
+.design{
+    display: none;
+}
+
+.overlay{
+    cursor: none;
+    padding: 5% 0;
+}
+
+.overlay:hover .design{
+    display: block;
+}
+
+.overlay:hover .title{
+    display: none;
+}
+
+@media (max-width:768px){
+    .presentation{margin-top: 20%; }
+    h1{font-size: xx-large;}
+    .overlay{display: flex; margin: 0 10%}
+}
+
+@media(max-width:425px){
+    .sidebar{width: 20% !important;}
+    .presentation{margin-top: 45%; }
+}

@@ -10,6 +10,4 @@ function slide() {
         toggle = true,
         document.getElementById("sidebar").style.visibility = "hidden";
 
-
-
 }
