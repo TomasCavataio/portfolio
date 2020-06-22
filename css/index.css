@@ -54,6 +54,5 @@
 }
 
 @media(max-width:425px){
-    .sidebar{width: 20% !important;}
     .presentation{margin-top: 45%; }
 }

@@ -20,3 +20,22 @@ function showNumber() {
 function showMail() {
     document.getElementById("mail").style.opacity = "1";
 }
+
+function loadSkills(){
+    document.getElementById("frontend").style.width = "70%";
+    document.getElementById("backend").style.width = "50%";
+    document.getElementById("coding").style.width = "55%";
+    document.getElementById("communication").style.width = "88%";
+    document.getElementById("teamwork").style.width = "75%"
+    document.getElementById("solving").style.width = "73%"
+}
+
+/*
+function init() {
+    debugger
+    setTimeout(() => {
+        document.getElementsByClassName("title").style.opacity = 0;
+        document.getElementsByClassName("design").style.display = "block";
+    }, 3500);
+}
+*/

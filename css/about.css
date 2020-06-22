@@ -36,8 +36,11 @@
     margin-top: 2%;
 }
 
-@media (max-width:768px){
-    .presentation{grid-template-columns: 1fr;}
+.progress-bar{
+    transition: 3s;
+    animation: 3s linear 1s;
+    animation-fill-mode: forwards;
+    width: 0%;
 }
 
 .leftPresentation{
@@ -69,6 +72,10 @@
 q{
     font-style: italic;
     align-self: center;
+}
+
+@media (max-width:768px){
+    .presentation{grid-template-columns: 1fr;}
 }
 
 @media (max-width:768px){
