@@ -8,6 +8,11 @@
     height: 90%;
 }
 
+#mail{
+    opacity: 0;
+    transition: 1s;
+}
+
 .presentation{
     height: 100%;
 }
@@ -22,8 +27,6 @@
     justify-content: center;
 }
 
-
-
 .presentation{
     margin-top: 5%;
     height: 100%;
@@ -32,6 +35,18 @@
 
 .presentation p{
     margin: 0 10%;
+}
+
+.contactInfo{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#phoneInfo{
+    opacity: 0;
+    transition: 1s;
 }
 
 .contact{

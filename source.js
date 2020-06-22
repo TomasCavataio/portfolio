@@ -1,6 +1,6 @@
 var toggle = true;
 
-function slide() {
+function toggleNav() {
 
     if (toggle) {
         document.getElementById("sidebar").style.visibility = "visible"
@@ -10,4 +10,13 @@ function slide() {
         toggle = true,
         document.getElementById("sidebar").style.visibility = "hidden";
 
+}
+
+
+function showNumber() {
+    document.getElementById("phoneInfo").style.opacity = "1";
+}
+
+function showMail() {
+    document.getElementById("mail").style.opacity = "1";
 }
