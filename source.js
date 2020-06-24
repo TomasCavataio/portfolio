@@ -21,7 +21,7 @@ function showMail() {
     document.getElementById("mail").style.opacity = "1";
 }
 
-function loadSkills(){
+function loadSkills() {
     document.getElementById("frontend").style.width = "70%";
     document.getElementById("backend").style.width = "50%";
     document.getElementById("coding").style.width = "55%";
@@ -30,12 +30,14 @@ function loadSkills(){
     document.getElementById("solving").style.width = "73%"
 }
 
-/*
 function init() {
-    debugger
+    let title = document.getElementById("title");
     setTimeout(() => {
-        document.getElementsByClassName("title").style.opacity = 0;
-        document.getElementsByClassName("design").style.display = "block";
-    }, 3500);
+        title.style.opacity = "0";
+    }, 1000);
+
+    setTimeout(() => {
+        title.innerText = "Designed by TomasCavataio";
+        title.style.opacity = "1";
+    }, 2000);
 }
-*/

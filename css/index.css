@@ -20,7 +20,7 @@
 
 
 .presentation{
-    margin-top: 10%;
+    margin-top: 15%;
     height: 80%;
     width: 100%;
     display: flex;
@@ -30,25 +30,14 @@
     align-items: center;
 }
 
-.design{
-    display: none;
-}
-
-.overlay{
+#title{
+    transition: 1s;
+    user-select: none;
     cursor: none;
-    padding: 5% 0;
-}
-
-.overlay:hover .design{
-    display: block;
-}
-
-.overlay:hover .title{
-    display: none;
 }
 
 @media (max-width:768px){
-    .presentation{margin-top: 20%; }
+    .presentation{margin-top: 20%;}
     h1{font-size: xx-large;}
     .overlay{display: flex; margin: 0 10%}
 }
