@@ -4,7 +4,7 @@
 }
 
 .bg{
-    background-image: url('../img/light.jpg');
+    background-color: #c7ded4;
 	background-size: 100% 100%;
 	height: 100vh;
 }
@@ -30,9 +30,9 @@
 }
 
 .presentation{
-    display: grid;
+   /*  display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 40% 60%; */
     margin-top: 2%;
 }
 
@@ -60,7 +60,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    grid-column: 2 / 3;
+  /*   grid-column: 2 / 3; */
 }
 
 .rightPresentation p{
@@ -74,16 +74,30 @@ q{
     align-self: center;
 }
 
-@media (max-width:768px){
-    .presentation{grid-template-columns: 1fr;}
+@media (max-width: 1024px){
+    .leftPresentation img{
+        max-width: 30%;
+    }
 }
 
-@media (max-width:768px){
-    .leftPresentation{display: none;}
-    .rightPresentation{margin: 2% 5%;}
+@media (max-width: 768px){
+    .leftPresentation img{
+        max-width: 50%;
+    }
+    .content{
+        margin-bottom: 3%;
+    }
 }
 
-@media (max-width:425px){
-    .skills{display: none;}
-    .rightPresentation{margin: 10% 5%;}
+@media (max-width: 425px){
+    .rightPresentation{
+        text-align: center;
+        margin: 3%;
+    }
+    .rightPresentation p{
+        font-size: 1em;
+    }
+    .content{
+        margin-bottom: 3%;
+    }
 }
