@@ -1,17 +1,16 @@
 var toggle = true;
+var sidebar = document.getElementById("sidebar");
 
 function toggleNav() {
-
     if (toggle) {
-        document.getElementById("sidebar").style.visibility = "visible"
-        document.getElementById("sidebar").style.width = "15%"
+        sidebar.style.visibility = "visible"
+        sidebar.style.width = "20%"
         toggle = false;
-    } else document.getElementById("sidebar").style.width = "0",
+    } else sidebar.style.width = "0",
         toggle = true,
-        document.getElementById("sidebar").style.visibility = "hidden";
+        sidebar.style.visibility = "hidden";
 
 }
-
 
 function showNumber() {
     document.getElementById("phoneInfo").style.opacity = "1";
