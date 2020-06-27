@@ -1,5 +1,4 @@
 .content{
- margin: 0% 15% 0% 15%;
  width: 100%;
 }
 
@@ -26,7 +25,6 @@
     display: flex;
     height: 55%;
     align-items: center;
-    margin-top: 5%;
 }
 
 .presentation{
@@ -50,8 +48,8 @@
 }
 
 .leftPresentation img{
-    max-width: 20%;
-    border-radius: 50%;
+    max-width: 30%;
+    border-radius: 15%;
     height: auto;
     margin: 3% 3% 0 10%;
 }
@@ -67,6 +65,38 @@
     font-style: italic;
     font-size: large;
     margin: 0;
+    text-align: center;
+}
+
+.technologies{
+    list-style: none;
+    margin-left: 10%;
+}
+
+.techTitle{
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.icon{
+    height: 3em;
+    margin: 1em 1em 0 1em;
+}
+
+.secondRow{
+ margin-left: 1em;
+}
+
+#html5{
+    color: red;
+}
+
+#angular{
+    color: #dd0031;
+}
+
+#bootstrap{
+    color: purple;
 }
 
 q{
