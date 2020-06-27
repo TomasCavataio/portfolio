@@ -31,7 +31,7 @@ html, body{
     position: fixed;
     height: 100%;
     text-align: center;
-    background-color: #b6aeff;
+    background-color: black;
     transition: 0.5s;
     overflow: hidden;
     z-index: 1;
@@ -44,7 +44,7 @@ html, body{
 }
 
 .sidebar ul li{
-    border-top: 1px solid rgb(155, 147, 234);
+    border-top: 1px solid;
     height: 20%;
     display: flex;
     justify-content: center;
@@ -55,7 +55,7 @@ html, body{
     text-decoration: none;
     display: block;
     font-weight: bold;
-    color: #000b5a;
+    color: white;
     font-family: 'Nova Slim', cursive;
 }
 
@@ -65,7 +65,7 @@ html, body{
 
 
 .sidebar ul li:hover{
-    background-color: #6049C5;
+    background-color: darkslategrey;
     cursor: pointer;
 }
 
@@ -85,6 +85,10 @@ html, body{
     background-color: transparent;
     padding: 20% 20%;
     margin: 15% 80%;
+}
+
+.insideSlide{
+    color: white;
 }
 
 @media (max-width:768px){

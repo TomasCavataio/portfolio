@@ -20,6 +20,13 @@
 .presentation a{
     display: flex;
     justify-content: center;
+    font-size: x-large;
+}
+
+.presentation span{
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
 }
 
 .presentation p{

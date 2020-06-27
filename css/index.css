@@ -1,16 +1,18 @@
-.content{
- margin: 0% 15% 0% 15%;
- width: 100%;
- height: 90%;
+.content {
+    margin: 0% 15% 0% 15%;
+    width: 100%;
+    height: 90%;
 }
 
-.bg{
-    background-image: url('../img/light.jpg');
-	background-size: 100% 100%;
-	height: 100vh;
+.bg {
+    width: 100vw;
+    height: 100vh;
+    background: url(../img/bg.jpg);
+    background-size: cover;
+    background-position: center, center;
 }
 
-.box{
+.box {
     height: 70%;
     width: 80%;
     white-space: nowrap;
@@ -18,35 +20,47 @@
     box-sizing: border-box;
 }
 
-
-.presentation{
+.presentation {
     margin-top: 15%;
     height: 80%;
     width: 100%;
     display: flex;
-    grid-template-rows: repeat(3,1fr);
-    font-family: 'Cinzel', serif;
+    grid-template-rows: repeat(3, 1fr);
+    font-family: "Cinzel", serif;
     justify-content: center;
     align-items: center;
 }
 
-#title{
+#title {
     transition: 1s;
     user-select: none;
     cursor: none;
 }
 
-@media (max-width:768px){
-    .presentation{margin-top: 20%;}
-    h1{font-size: xx-large;}
-    .overlay{display: flex; margin: 0 10%}
+@media (max-width: 768px) {
+    .presentation {
+        margin-top: 20%;
+    }
+    h1 {
+        font-size: xx-large;
+    }
+    .overlay {
+        display: flex;
+        margin: 0 10%;
+    }
 }
 
-@media(max-width:425px){
-    .presentation{margin-top: 45%; }
-    #title{ margin-left: 20%;}
+@media (max-width: 425px) {
+    .presentation {
+        margin-top: 45%;
+    }
+    #title {
+        margin-left: 20%;
+    }
 }
 
-@media(max-width:320px){
-    #title{ margin-left: 10%;}
+@media (max-width: 320px) {
+    #title {
+        margin-left: 10%;
+    }
 }

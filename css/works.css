@@ -1,85 +1,78 @@
-.bg{
+.bg {
     background-color: #d8ecee;
-	background-size: 100% 100%;
-	height: 100vh;
+    background-size: 100% 100%;
+    height: 100vh;
 }
 
-.content{
-    margin-top: 5%;
-    height: 90%;
-}
-
-.presentation{
+.presentation {
     height: 100%;
 }
 
-.presentation a{
+.presentation a {
     display: flex;
     justify-content: center;
     margin: 2% 40%;
 }
 
-.presentation p{
+.presentation p {
     display: flex;
     justify-content: center;
 }
 
-.presentation{
+.presentation {
     height: 100%;
     width: 100%;
 }
 
-.presentation p{
+.presentation p {
     margin: 0 10%;
 }
 
-.preview{
+.preview {
     text-align: center;
 }
 
-.sneak{
+.sneak {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-.sneak1{
+.sneak1 {
     display: grid;
     grid-column: 1 / 2;
     margin-top: 5%;
 }
 
-.sneak1 div{
-    display: flex;
-    justify-content: center;
+.pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
 }
 
-.sneak1 img{
-    cursor: pointer;
+.carousel-inner {
+    position: relative;
+    width: 70%;
+    overflow: hidden;
+    height: auto;
+    margin: 5% 15%;
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    filter: invert(1);
 }
 
-.sneak2{
-    display: grid;
-    grid-column: 2 / 3;
-    margin-top: 5%;
+@media (max-width: 768px) {
+    .presentation {
+        grid-template-columns: 1fr;
+    }
+    .preview {
+        margin-top: 10%;
+    }
 }
 
-.sneak2 div{
-    display: flex;
-    justify-content: center;
-}
-
-.sneak2 img{
-    cursor: pointer;
-}
-.pic{
-    max-width: 50%;
-}
-@media (max-width:768px){
-    .presentation{grid-template-columns: 1fr;}
-    .preview{margin-top: 10%;}
-}
-
-@media (max-width:425px){
-    .pic{max-width: 90%;}
-    .preview{margin-top: 15%}
+@media (max-width: 425px) {
+    .preview {
+        margin-top: 15%;
+    }
 }
