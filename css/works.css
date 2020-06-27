@@ -62,6 +62,10 @@
     filter: invert(1);
 }
 
+.carousel-indicators li{
+    background-color: black;
+}
+
 @media (max-width: 768px) {
     .presentation {
         grid-template-columns: 1fr;

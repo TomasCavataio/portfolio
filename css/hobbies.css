@@ -1,11 +1,11 @@
-.bg{
+.bg {
     background-image: url("../img/collage.png");
     background-size: cover;
     height: 100%;
     overflow: hidden;
 }
 
-.intro{
+.intro {
     justify-content: center;
     display: flex;
     height: 75%;
@@ -13,79 +13,91 @@
     margin: 22% 10%;
 }
 
-.content{
+.content {
     height: 90%;
     width: 100%;
 }
 
-.presentation{
+.presentation {
     height: 100%;
     width: 100%;
 }
 
-.presentation a{
+.presentation a {
     display: flex;
     justify-content: center;
 }
 
-.presentation p{
+.presentation p {
     display: flex;
     justify-content: center;
 }
 
-.presentation{
+.presentation {
     height: 100%;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 }
 
-.first{
+h2 {
+    font-size: 2rem;
+    background-color: ghostwhite;
+    border-radius: 22px;
+    padding: 1%;
+    font-family: auto;
+}
+
+.first {
     display: grid;
     grid-column: 1/4;
     grid-row: 1/2;
 }
 
-.first ul{
+.first ul {
     list-style: none;
     display: inline-flex;
     align-items: flex-end;
 }
 
-ul{
+ul {
     margin: 0;
 }
 
-img{
+img {
     max-width: 100%;
     height: auto;
 }
 
-.second{
+.second {
     display: grid;
     grid-column: 1/4;
     grid-row: 2/3;
 }
 
-.second ul{
- list-style: none;
+.second ul {
+    list-style: none;
     display: inline-flex;
     align-items: flex-start;
 }
-.preview{
+.preview {
     text-align: center;
 }
 
-.sneak{
+.sneak {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-@media (max-width:768px){
-    .presentation{grid-template-columns: 1fr;}
+@media (max-width: 768px) {
+    .presentation {
+        grid-template-columns: 1fr;
+    }
 }
 
-@media (max-width:425px){
-    .presentation{display: none;}
+@media (max-width: 425px) {
+    .presentation {
+        display: none;
+    }
 }
