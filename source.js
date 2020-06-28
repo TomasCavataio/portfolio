@@ -22,11 +22,12 @@ function showMail() {
 
 function loadSkills() {
     document.getElementById("frontend").style.width = "70%";
-    document.getElementById("backend").style.width = "50%";
-    document.getElementById("coding").style.width = "55%";
+    document.getElementById("backend").style.width = "55%";
+    document.getElementById("coding").style.width = "65%";
     document.getElementById("communication").style.width = "88%";
     document.getElementById("teamwork").style.width = "75%"
     document.getElementById("solving").style.width = "73%"
+    document.getElementById("money").style.width = "8%"
 }
 
 function init() {

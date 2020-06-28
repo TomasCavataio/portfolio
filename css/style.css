@@ -90,15 +90,6 @@ body {
     color: white;
 }
 
-.mark {
-    max-width: 3%;
-    filter: invert(1);
-    position: absolute;
-    right: 5%;
-    top: 10%;
-    background-color: transparent;
-}
-
 #welcomeLogo {
     transition: 1s;
     opacity: 0;
@@ -109,6 +100,9 @@ body {
     left: 40%;
     background-color: transparent;
     filter: invert(1);
+    user-select: none;
+    cursor: none;
+    -webkit-user-drag: none;
 }
 
 @media (max-width: 768px) {
