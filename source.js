@@ -1,5 +1,8 @@
 var toggle = true;
 var sidebar = document.getElementById("sidebar");
+let title = document.getElementById("title");
+let logo = document.getElementById("welcomeLogo");
+let isDark = false;
 
 function toggleNav() {
     if (toggle) {
@@ -31,8 +34,6 @@ function loadSkills() {
 }
 
 function init() {
-    let title = document.getElementById("title");
-    let logo = document.getElementById("welcomeLogo");
     setTimeout(() => {
         title.style.opacity = "0";
     }, 1000);
@@ -42,4 +43,30 @@ function init() {
         title.style.opacity = "1";
         logo.style.opacity = "1";
     }, 2000);
+}
+
+function dark() {
+    let bg = document.body;
+    let moon = document.getElementById("moon");
+    let sun = document.getElementById("sun");
+
+    if (!isDark) {
+        bg.classList.remove("bg")
+        bg.classList.add("darkBg");
+        title.style.color = "white"
+        moon.style.display = "none"
+        sun.style.display = "block"
+        logo.style.filter = "invert(0)";
+        isDark = true
+    } else if (isDark) {
+        bg.classList.remove("darkBg");
+        bg.classList.add("bg");
+        title.style.color = "black"
+        moon.style.display = "block"
+        sun.style.display = "none"
+        logo.style.filter = "invert(1)";
+        isDark = false;
+    }
+
+    
 }
