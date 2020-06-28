@@ -31,6 +31,7 @@ function loadSkills() {
 
 function init() {
     let title = document.getElementById("title");
+    let logo = document.getElementById("welcomeLogo");
     setTimeout(() => {
         title.style.opacity = "0";
     }, 1000);
@@ -38,5 +39,6 @@ function init() {
     setTimeout(() => {
         title.innerText = "Designed by TomasCavataio";
         title.style.opacity = "1";
+        logo.style.opacity = "1";
     }, 2000);
 }
