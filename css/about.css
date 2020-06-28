@@ -1,23 +1,24 @@
-.content{
- width: 100%;
+.content {
+    width: 100%;
 }
 
-.bg{
+.bg {
     width: 100vw;
     height: 100vh;
     background: url(../img/cloud.jpg);
     background-size: cover;
     background-position: center, center;
-    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
     transition: 1s;
 }
 
-.presentation{
+.presentation {
     height: 35%;
     width: 100%;
 }
 
-.box{
+.box {
     height: 70%;
     width: 80%;
     white-space: nowrap;
@@ -25,117 +26,113 @@
     box-sizing: border-box;
 }
 
-.skills{
+.skills {
     display: flex;
     height: 55%;
     align-items: center;
     margin-left: 2%;
 }
 
-.presentation{
-    margin-top: 2%;
-}
-
-.progress-bar{
+.progress-bar {
     transition: 3s;
     animation: 3s linear 1s;
     animation-fill-mode: forwards;
     width: 0%;
 }
 
-.leftPresentation{
+.leftPresentation {
     display: flex;
     align-items: flex-end;
     justify-content: center;
 }
 
-.leftPresentation img{
+.leftPresentation img {
     max-width: 30%;
     border-radius: 15%;
     height: auto;
     margin: 3% 3% 0 10%;
 }
 
-.rightPresentation{
+.rightPresentation {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.rightPresentation p{
+.rightPresentation p {
     font-size: large;
     margin: 0;
     text-align: center;
-    font-family: 'Playfair Display', serif;
+    font-family: "Playfair Display", serif;
 }
 
-.technologies{
+.technologies {
     list-style: none;
     margin-left: 10%;
 }
 
-.techTitle{
+.techTitle {
     text-align: center;
     margin-bottom: 3%;
 }
 
-.icon{
+.icon {
     height: 3em;
     margin: 1em 1em 0 1em;
 }
 
-.secondRow{
- margin-left: 1em;
+.secondRow {
+    margin-left: 1em;
 }
 
-#html5{
+#html5 {
     color: red;
 }
 
-#angular{
+#angular {
     color: #dd0031;
 }
 
-#bootstrap{
+#bootstrap {
     color: purple;
 }
 
-q{
+q {
     align-self: center;
-    font-family: 'Courgette', cursive;
+    font-family: "Courgette", cursive;
 }
 
-@media (max-width: 1024px){
-    .leftPresentation img{
+@media (max-width: 1024px) {
+    .leftPresentation img {
         max-width: 30%;
     }
 }
 
-@media (max-width: 768px){
-    .leftPresentation img{
+@media (max-width: 768px) {
+    .leftPresentation img {
         max-width: 50%;
     }
-    .content{
+    .content {
         margin-bottom: 3%;
     }
 }
 
-@media (max-width: 425px){
-    .rightPresentation{
+@media (max-width: 425px) {
+    .rightPresentation {
         text-align: center;
         margin: 3%;
     }
-    .rightPresentation p{
+    .rightPresentation p {
         font-size: 1em;
     }
-    .content{
+    .content {
         margin-bottom: 3%;
     }
-    .icon{
+    .icon {
         height: 2em;
         margin: 0 1em 0 0;
     }
-    .technologies{
+    .technologies {
         margin-left: 5%;
     }
 }
