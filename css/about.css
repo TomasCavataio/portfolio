@@ -3,10 +3,13 @@
 }
 
 .bg{
-    background-color: #c7ded4;
-	background-size: 100% 100%;
+    width: 100vw;
     height: 100vh;
-    overflow-x: hidden;
+    background: url(../img/cloud.jpg);
+    background-size: cover;
+    background-position: center, center;
+    overflow: hidden;
+    transition: 1s;
 }
 
 .presentation{

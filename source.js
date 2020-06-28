@@ -2,6 +2,9 @@ var toggle = true;
 var sidebar = document.getElementById("sidebar");
 let title = document.getElementById("title");
 let logo = document.getElementById("welcomeLogo");
+let bg = document.body;
+let moon = document.getElementById("moon");
+let sun = document.getElementById("sun");
 let isDark = false;
 
 function toggleNav() {
@@ -45,11 +48,7 @@ function init() {
     }, 2000);
 }
 
-function dark() {
-    let bg = document.body;
-    let moon = document.getElementById("moon");
-    let sun = document.getElementById("sun");
-
+function darkIndex() {
     if (!isDark) {
         bg.classList.remove("bg")
         bg.classList.add("darkBg");
@@ -67,6 +66,36 @@ function dark() {
         logo.style.filter = "invert(1)";
         isDark = false;
     }
+}
 
-    
+function darkContact() {
+    let number = document.getElementById("phoneInfo")
+    let mail = document.getElementById("mail")
+    let contact = document.getElementById("reachTitle");
+    let contactIcon = document.getElementsByClassName("contactIcon")
+    if (!isDark) {
+        bg.classList.remove("bg")
+        bg.classList.add("darkBg");
+        contact.style.color = "white"
+        for (let i = 0; i <= 3; i++) {
+            contactIcon[i].style.color = "white"
+        }
+        number.style.color = "white"
+        mail.style.color = "white"
+        moon.style.display = "none"
+        sun.style.display = "block"
+        isDark = true
+    } else if (isDark) {
+        bg.classList.remove("darkBg");
+        bg.classList.add("bg");
+        contact.style.color = "black"
+        for (let i = 0; i <= 3; i++) {
+            contactIcon[i].style.color = "blue"
+        }
+        number.style.color = "blue"
+        mail.style.color = "blue"
+        moon.style.display = "block"
+        sun.style.display = "none"
+        isDark = false;
+    }
 }

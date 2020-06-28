@@ -5,6 +5,17 @@
     background-size: cover;
     background-position: center, center;
     overflow: hidden;
+    transition: 1s;
+}
+
+.darkBg{
+    width: 100vw;
+    height: 100vh;
+    background: url(../img/night.jpg);
+    background-size: cover;
+    background-position: center, center;
+    overflow: hidden;
+    transition: 1s;
 }
 
 .content {
