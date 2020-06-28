@@ -103,7 +103,8 @@ body {
     transition: 1s;
     opacity: 0;
     max-width: 20%;
-    position: absolute;
+    position: relative;
+    margin-top: 2%;
     top: 45%;
     left: 40%;
     background-color: transparent;
@@ -121,23 +122,23 @@ body {
         display: flex;
         margin-left: 10%;
     }
-    #welcomeLogo{
+    #welcomeLogo {
         top: 50%;
     }
 }
 
-@media (max-width: 320px){
-    #welcomeLogo{
+@media (max-width: 320px) {
+    #welcomeLogo {
         top: 60%;
         left: 30%;
         max-width: 40%;
     }
 }
 
-@media (max-width: 425px){
-    #welcomeLogo{
-        top: 25%;
-        left: 30%;
+@media (max-width: 425px) {
+    #welcomeLogo {
+        top: 45%;
+        left: 32%;
         max-width: 30%;
     }
 }
