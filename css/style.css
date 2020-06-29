@@ -16,15 +16,6 @@ body {
     position: relative;
 }
 
-.logo {
-    float: left;
-    width: auto;
-    color: black;
-    margin-left: 5%;
-    margin-top: 2%;
-    cursor: none;
-}
-
 .sidebar {
     width: 0%;
     float: left;
@@ -41,6 +32,7 @@ body {
 
 .sidebar ul {
     grid-row: 2 / 7;
+    margin-bottom: 0;
 }
 
 .sidebar ul li {
@@ -150,5 +142,8 @@ body {
         top: 45%;
         left: 32%;
         max-width: 30%;
+    }
+    .sidebar ul li a .fa{
+        display: none;
     }
 }

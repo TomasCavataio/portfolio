@@ -8,14 +8,23 @@ let sun = document.getElementById("sun");
 let isDark = false;
 
 function toggleNav() {
+    if (screen.width <= 425) {
+        if (toggle) {
+            sidebar.style.visibility = "visible"
+            sidebar.style.width = "100%"
+            sidebar.style.height = "30%"
+            toggle = false;
+            return
+        }
+    }
     if (toggle) {
         sidebar.style.visibility = "visible"
         sidebar.style.width = "20%"
+        sidebar.style.height = "100%"
         toggle = false;
     } else sidebar.style.width = "0",
         toggle = true,
         sidebar.style.visibility = "hidden";
-
 }
 
 function showNumber() {
@@ -31,7 +40,7 @@ function loadSkills() {
     document.getElementById("backend").style.width = "55%";
     document.getElementById("coding").style.width = "65%";
     document.getElementById("communication").style.width = "88%";
-    document.getElementById("teamwork").style.width = "75%"
+    document.getElementById("teamwork").style.width = "100%"
     document.getElementById("solving").style.width = "73%"
     document.getElementById("money").style.width = "8%"
 }
