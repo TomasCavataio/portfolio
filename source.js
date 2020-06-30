@@ -15,7 +15,10 @@ function toggleNav() {
             sidebar.style.height = "30%"
             toggle = false;
             return
-        }
+        } else sidebar.style.height = "0",
+            toggle = true,
+            sidebar.style.visibility = "hidden";
+        return
     }
     if (toggle) {
         sidebar.style.visibility = "visible"

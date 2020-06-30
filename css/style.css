@@ -146,4 +146,9 @@ body {
     .sidebar ul li a .fa{
         display: none;
     }
+    .sidebar{
+        height: 0;
+        width: 100%;
+    }
 }
+
